@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:snake"
         mc:Ignorable="d"
-        Title="MainWindow" Height="781" Width="900">
+        Title="MainWindow" Height="782" Width="900">
     <Canvas Name="Snake" Background="LightCyan" Focusable="True" KeyDown="OnKeyDownHandler">
         <Rectangle Fill="Black" Height="750" Width="750"></Rectangle>
         <Rectangle Name="food" Height="25" Width="25" Fill="Red" Visibility="Hidden"></Rectangle>
         <Button Name="start" Content="Start" Canvas.Left="769" Canvas.Top="680" Width="100" Height="60" Click="start_Click"/>
+        <TextBox Name="scoreTextBox" Focusable="False" Height="23" Canvas.Left="769" TextWrapping="Wrap" Canvas.Top="652" Width="100"/>
+
     </Canvas>
 </Window>
